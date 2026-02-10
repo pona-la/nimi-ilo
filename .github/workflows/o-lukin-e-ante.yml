@@ -5,6 +5,8 @@ on: pull_request
 jobs:
   o-lukin-e-ante:
     runs-on: ubuntu-latest
+    outputs:
+      ante: ${{ steps.dnscontrol_preview.outputs.toki }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
@@ -18,8 +20,6 @@ jobs:
         env:
           PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
           PORKBUN_SECRET_KEY: ${{ secrets.PORKBUN_SECRET_KEY }}
-        outputs:
-          ante: ${{ steps.dnscontrol_preview.outputs.toki }}
         run: |
           pini_toki=$(openssl rand -hex 16)
           echo "toki<<$pini_toki" >> "$GITHUB_OUTPUT"
