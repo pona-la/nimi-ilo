@@ -1,0 +1,25 @@
+name: o pana e ante
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      -main
+
+jobs:
+  o-pana-e-ante:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: o kama e ilo DNSControl
+        uses: gacts/install-dnscontrol@bd76d0934fea4543e839d00d9104c5f6fefc495b # v1.3.1
+        with:
+          version: v4.34.0
+
+      - name: ilo DNSControl la o pana e ante
+        env:
+          PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
+          PORKBUN_SECRET_KEY: ${{ secrets.PORKBUN_SECRET_KEY }}
+        run: |
+          dnscontrol push
