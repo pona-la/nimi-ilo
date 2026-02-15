@@ -23,7 +23,7 @@ jobs:
         run: |
           pini_toki=$(openssl rand -hex 16)
           echo "toki<<$pini_toki" >> "$GITHUB_OUTPUT"
-          dnscontrol preview | tee -a "$GITHUB_OUTPUT"
+          dnscontrol preview 2>&1 | tee -a "$GITHUB_OUTPUT"
           echo "$pini_toki" >> "$GITHUB_OUTPUT"
 
       - name: o toki e ante
