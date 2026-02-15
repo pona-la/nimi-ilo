@@ -36,8 +36,6 @@ D("pona.la", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
     TXT("@", "\"v=spf1 mx a -all\""),
     CNAME("autoconfig", "mx1.pona.la."),
     CNAME("autodiscover", "mx1.pona.la."),
-
-    TXT("@", "alasa alasa alasa"),
 );
 
 // poki nimi li.pona.la li tawa nimi jan. jan ale li ken lon e lipu ona lon ni.
