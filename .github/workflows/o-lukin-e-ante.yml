@@ -24,10 +24,13 @@ jobs:
           pini_toki=$(openssl rand -hex 16)
           echo "toki<<$pini_toki" >> "$GITHUB_OUTPUT"
           dnscontrol preview 2>&1 | tee -a "$GITHUB_OUTPUT"
+          ponaxp=${PIPESTATUS[0]}
           echo "$pini_toki" >> "$GITHUB_OUTPUT"
+          exit $ponaxp
 
       - name: o toki e ante
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        if: ${{ !cancelled() }}
         env:
           TOKI: ${{ steps.dnscontrol_preview.outputs.toki }}
         with:
