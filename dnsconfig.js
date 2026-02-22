@@ -27,15 +27,9 @@ D("pona.la", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
     TXT("_github-challenge-pona-la", "753989082a"),
     TXT("netlify-challenge", "VmF1Af4xSYK2GrwcmhSz0"),
 
-    A("mx1", "173.249.58.12"),
-    MX("@", 10, "mx1.pona.la."),
     MX("@", 1, "fwd2.porkbun.com."),
     MX("@", 1, "fwd1.porkbun.com."),
-    TXT("@", "v=spf1 mx include:_spf.porkbun.com ~all"),
-    TXT("@", "v=spf1 include:_spf.porkbun.com ~all"),
-    TXT("@", "\"v=spf1 mx a -all\""),
-    CNAME("autoconfig", "mx1.pona.la."),
-    CNAME("autodiscover", "mx1.pona.la."),
+    TXT("@", "v=spf1 mx a include:_spf.porkbun.com ~all"),
 );
 
 // poki nimi li.pona.la li tawa nimi jan. jan ale li ken lon e lipu ona lon ni.
