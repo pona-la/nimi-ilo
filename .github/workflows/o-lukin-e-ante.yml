@@ -1,6 +1,6 @@
 name: o lukin e ante
 
-on: pull_request
+on: pull_request_target
 
 jobs:
   o-lukin-e-ante:
@@ -9,6 +9,13 @@ jobs:
       ante: ${{ steps.dnscontrol_preview.outputs.toki }}
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # monsuta mute - taso lon la ni li ken ala pakala. toki ilo ale pi
+          # lipu ni li anpa ala tawa lipu pi poki ni. jan ike li ante ale e
+          # poki ni la ona li lawa e ni taso: ilo DNSControl li lukin e lipu
+          # seme pi nimi ilo. lipu li toki ilo JS, taso ilo DNSControl li poki
+          # wawa.
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: o kama e ilo DNSControl
         uses: gacts/install-dnscontrol@bd76d0934fea4543e839d00d9104c5f6fefc495b # v1.3.1
