@@ -57,6 +57,10 @@ D_EXTEND("li.pona.la",
 // lawa li seme?
 D_EXTEND("alasa.pona.la", A("@", "45.61.187.3"));
 
+// id.pona.la
+// lawa li jan Nikolasu
+D_EXTEND("id.pona.la", CNAME("@", "id.nikolas.dy.fi."));
+
 // ilo-sona.pona.la
 // lawa li seme?
 D_EXTEND("ilo-sona.pona.la", CNAME("@", "milkcool.hackclub.app."));
