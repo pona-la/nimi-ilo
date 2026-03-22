@@ -57,10 +57,6 @@ D_EXTEND("li.pona.la",
 // lawa li seme?
 D_EXTEND("alasa.pona.la", A("@", "45.61.187.3"));
 
-// id.pona.la
-// lawa li jan Nikolasu
-D_EXTEND("id.pona.la", CNAME("@", "id.nikolas.dy.fi."));
-
 // ilo-sona.pona.la
 // lawa li seme?
 D_EXTEND("ilo-sona.pona.la", CNAME("@", "milkcool.hackclub.app."));
@@ -119,6 +115,10 @@ D_EXTEND("linku.pona.la", CNAME("@", "lipu-linku.github.io."));
 // ma.pona.la
 // lawa li poki https://github.com/pona-la/ma.pona.la
 D_EXTEND("ma.pona.la", CNAME("@", "pona-la.github.io."));
+
+// mi.pona.la
+// lawa li jan Nikolasu
+D_EXTEND("mi.pona.la", CNAME("@", "id.nikolas.dy.fi."));
 
 // mutenpo.pona.la
 // lawa li jan @mynameisashllee
