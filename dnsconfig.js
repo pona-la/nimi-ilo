@@ -118,7 +118,16 @@ D_EXTEND("ma.pona.la", CNAME("@", "pona-la.github.io."));
 
 // mi.pona.la
 // lawa li jan Nikolasu
-D_EXTEND("mi.pona.la", CNAME("@", "id.nikolas.dy.fi."));
+D_EXTEND("mi.pona.la",
+    ALIAS("@", "id.nikolas.dy.fi."),
+    
+    MX("@", 10, "mail.osphost.net."),
+    TXT("202603e._domainkey", "v=DKIM1; k=ed25519; h=sha256; p=R1spuZdVKHSK56NAnSBV2Y5xmUTzplvVfDXpeVGSnwE="),
+    TXT("202603r._domainkey", 'v=DKIM1; k=rsa; h=sha256; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA79iGhiBwdtuKxouXu2NWTGCSZnffMB2OGrjTnPvDootTMWnoTPwgCJYHlH2EMNkU9guluVdvlPZa+jIGyG0Cur5MGcgjnyGRAaBC1MthX13R1V8xoweCBwjZsQDDJSYa7CmF6OU18FlsbP3DWv0Gg1Lg7Dgny/VWIaqAZJrsOgLDaYF7791wd3E" "1WCdPTVMbxaMzPg3TA0/yUmsoKfDccnZWKSnU3K1NgEm7EL5JFd2TrUrbJ6PqJ0KRiQ1GBNT+QV9jgZL0sSjMmHUY1tHZF4xO3HPEA9IwMALo5icgzf8DPDwH/bg2Tx8LU1F7SSYhugY80j0QpCZXO9kaHzLOQwIDAQAB'),
+    TXT("@", "v=spf1 mx ra=lawa -all"),
+    TXT("_dmarc", "v=DMARC1; p=reject; rua=mailto:lawa@mi.pona.la; ruf=mailto:lawa@mi.pona.la"),
+    TXT("_smtp._tls", "v=TLSRPTv1; rua=mailto:lawa@mi.pona.la"),
+);
 
 // mutenpo.pona.la
 // lawa li jan @mynameisashllee
