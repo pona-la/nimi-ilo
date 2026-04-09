@@ -27,6 +27,8 @@ jobs:
         env:
           PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
           PORKBUN_SECRET_KEY: ${{ secrets.PORKBUN_SECRET_KEY }}
+          KULUPULA_PORKBUN_API_KEY: ${{ secrets.KULUPULA_PORKBUN_API_KEY }}
+          KULUPULA_PORKBUN_SECRET_KEY: ${{ secrets.KULUPULA_PORKBUN_SECRET_KEY }}
         run: |
           pini_toki=$(openssl rand -hex 16)
           echo "toki<<$pini_toki" >> "$GITHUB_OUTPUT"
