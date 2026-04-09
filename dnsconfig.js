@@ -22,8 +22,6 @@ D("pona.la", REG_PORKBUN, DnsProvider(DSP_PORKBUN),
     CNAME("www", "pona-la.github.io."),
 
     TXT("@", "google-site-verification=qVqD07LaVt2BW6SYC0nhxewPMDPE4YE3GK1Afu1AO6A"),
-    TXT("_acme-challenge", "5s8tB9IPkS5-dII7cYgMmzMJVEJor0JSS7VDuxqo96o"),
-    TXT("_acme-challenge", "u-AN-j02yTvoyTIWCxP5owV7k5bDRUD7uJ5s7eM2gRg"),
     TXT("_github-challenge-pona-la", "753989082a"),
     TXT("netlify-challenge", "VmF1Af4xSYK2GrwcmhSz0"),
 
