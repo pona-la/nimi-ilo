@@ -144,7 +144,12 @@ D_EXTEND("nimi.pona.la", CNAME("@", "pona-la.github.io."));
 
 // nimi-li.pona.la
 // lawa li jan Tepo
-D_EXTEND("nimi-len.pona.la", ALIAS("@", "tbodt.com."));
+D_EXTEND("nimi-len.pona.la",
+    ALIAS("@", "tbodt.com."),
+    TXT("@", "v=spf1 include:mailgun.org ~all"),
+    CNAME("pdk1._domainkey", "pdk1._domainkey.c0e6d9.dkim1.us.mgsend.org."),
+    CNAME("pdk2._domainkey", "pdk2._domainkey.c0e6d9.dkim1.us.mgsend.org."),
+);
 
 // oalasa.pona.la
 // lawa li jan Conor, ilo Siko la <@278685537949319168>
