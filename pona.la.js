@@ -142,6 +142,10 @@ D_EXTEND("nasi.pona.la",
 // lawa li poki https://github.com/pona-la/nimi
 D_EXTEND("nimi.pona.la", CNAME("@", "pona-la.github.io."));
 
+// nimi-li.pona.la
+// lawa li jan Tepo
+D_EXTEND("nimi-len.pona.la", ALIAS("@", "tbodt.com"));
+
 // oalasa.pona.la
 // lawa li jan Conor, ilo Siko la <@278685537949319168>
 D_EXTEND("oalasa.pona.la", CNAME("@", "limitless-nectarine-cfice5xteszacr023mx8tys8.herokudns.com."));
