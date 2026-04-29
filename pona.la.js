@@ -198,3 +198,10 @@ D_EXTEND("toktok.pona.la", CNAME("@", "hosting.adalo.com."));
 // utala.pona.la
 // lawa li jan Lakuse @raacz
 D_EXTEND("utala.pona.la", CNAME("@", "utala-pona-la.netlify.app."));
+
+// kito.pona.la
+// lawa li jan Awekesi li jan Satase
+D_EXTEND("kito.pona.la",
+    A("@", "152.53.187.69"),
+    AAAA("@", "2a0a:4cc0:c1:18b6:389d:5ff:fef8:1396"),
+);
