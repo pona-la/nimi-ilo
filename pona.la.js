@@ -52,8 +52,8 @@ D_EXTEND("li.pona.la",
 
     // jan-luna.li.pona.la
     // lawa li jan Luna Wani @quanttum1
-    CNAME("jan-luna", "quanttum1.github.io."),
-    TXT("_discord", "dh=c37a1fd3c0bf259b7817ebf3cc6310a63f775f80")
+    CNAME("jan-luna-wani", "quanttum1.github.io."),
+    TXT("_discord.jan-luna-wani", "dh=7e662cbb40a95007e882b44aeb3008f9dae20d71")
 );
 
 // alasa.pona.la
