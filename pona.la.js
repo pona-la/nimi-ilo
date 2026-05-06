@@ -49,6 +49,11 @@ D_EXTEND("li.pona.la",
     // kala.li.pona.la
     // lawa li kala pona Tonju @bucketfish
     CNAME("kala", "bucketfish.github.io."),
+
+    // jan-luna.li.pona.la
+    // lawa li jan Luna Wani @quanttum1
+    CNAME("jan-luna", "quanttum1.github.io."),
+    TXT("_discord", "dh=c37a1fd3c0bf259b7817ebf3cc6310a63f775f80")
 );
 
 // alasa.pona.la
