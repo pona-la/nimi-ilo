@@ -9,7 +9,7 @@ D("kulupu.la", REG_KULUPU_LA, DnsProvider(DSP_KULUPU_LA),
     CNAME("www", "@"), // o pona e nasin WWW
 
     // ilo Kito en ilo Grebedoc
-    CNAME("dev", "grebedoc.dev."),
+    CNAME("mewika", "grebedoc.dev."),
     TXT("_git-pages-repository.dev", "https://kito.pona.la/tenpo-kulupu-pi-akesi-suli-llc/kulupu.la.git"),
 
     // ilo Spliit
