@@ -7,6 +7,12 @@ D("kulupu.la", REG_KULUPU_LA, DnsProvider(DSP_KULUPU_LA),
     A("@", "46.23.81.157"), // lipu Sourcehut
     AAAA("@", "2a03:6000:1813:1337::157"), // lipu Sourcehut
     CNAME("www", "@"), // o pona e nasin WWW
+
+    // ilo Kito en ilo Grebedoc
+    CNAME("dev", "grebedoc.dev."),
+    TXT("_git-pages-repository.dev", "https://kito.pona.la/tenpo-kulupu-pi-akesi-suli-llc/kulupu.la.git"),
+
+    // ilo Spliit
     CNAME("mani", "horse.pcarrier.com."), // tenpo kulupu la ilo li sona e mani kulupu
 
     // ilo Purelymail
