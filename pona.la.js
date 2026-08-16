@@ -43,8 +43,10 @@ D_EXTEND("li.pona.la",
 
     // kala-asi.li.pona.la
     // lawa li kala Asi @AcipenserSturio
-    CNAME("kala-asi", "acipensersturio.github.io."),
-    TXT("_atproto.kala-asi", "did=did:plc:qocllhtb6pc774sz3m2lo4zb"),
+    // CNAME("kala-asi", "acipensersturio.github.io."),
+    // TXT("_atproto.kala-asi", "did=did:plc:qocllhtb6pc774sz3m2lo4zb"),
+    // kala Asi li tawa https://asi.fish li kama kepeken ala .li.pona.la
+    URL301("kala-asi", "https://asi.fish", {includePath: "yes"}),
 
     // kala.li.pona.la
     // lawa li kala pona Tonju @bucketfish
