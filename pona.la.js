@@ -53,10 +53,14 @@ D_EXTEND("li.pona.la",
     // lawa li kala pona Tonju @bucketfish
     CNAME("kala", "bucketfish.github.io."),
 
-    // jan-luna-wani.li.pona.la
-    // lawa li jan Luna Wani @quanttum1
+    // kka.li.pona.la en jan-luna-wani.li.pona.la
+    // lawa li kasi kule Ana (tenpo pini la nimi li jan Luna Wani) @quanttum1
+    CNAME("kka", "quanttum1.github.io."),
+    TXT("_github-pages-challenge-quanttum1.kka", "d19fcaa0538748fe8c8f2a2e7addeb"),
+    TXT("_discord.kka", "dh=978054bf32547034e44864b82191b0451827e6e2"),
+    // lipu mi pi tenpo pini, mi wile awen e ona
     CNAME("jan-luna-wani", "quanttum1.github.io."),
-    TXT("_discord.jan-luna-wani", "dh=7e662cbb40a95007e882b44aeb3008f9dae20d71")
+    TXT("_github-pages-challenge-quanttum1.jan-luna-wani", "ee0445b3d9df8e3966e409353bd797"),
 );
 
 // alasa.pona.la
