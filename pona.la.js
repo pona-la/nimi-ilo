@@ -149,6 +149,10 @@ D_EXTEND("mi.pona.la",
 // lawa li jan @mynameisashllee
 D_EXTEND("mutenpo.pona.la", CNAME("@", "mynameisashllee.github.io."));
 
+// nanpa.pona.la
+// lawa li jan Sijuwan @theooolone
+D_EXTEND("nanpa.pona.la", A("@", "65.75.201.35"));
+
 // nasi.pona.la
 // lawa li jan Kepe @kepexx
 D_EXTEND("nasi.pona.la",
