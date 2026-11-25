@@ -226,4 +226,7 @@ D_EXTEND("utala.pona.la", CNAME("@", "utala-pona-la.netlify.app."));
 D_EXTEND("kito.pona.la",
     A("@", "152.53.187.69"),
     AAAA("@", "2a0a:4cc0:c1:18b6:389d:5ff:fef8:1396"),
+    TXT("@", "v=spf1 include:mailgun.org ~all"),
+    TXT("mailo._domainkey", 'k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx8OrYgev5onpj12Ey7lj3Q7FLUccL5m0fehfd53ruEIqS8n+D40xuWeWAB12UFexAOBuk9BIaFNbLuoA1u5QDzfvYoTIc0+BiHUUl03rzuIQC0wiS9ALpcxSzCVO1fBl0awUrN6hFxiNRxcIsq5VBS4Yr9NdPHWRNxglWIBBZNhLuuALDNRnDY8rjmFBxe8c99cj6BfSwHzfhDWYDspQ1/T/0vBLDZDbboOq18rLjLQOTEmCX1NUbusOc7ZuejTQ0v5QwG6kfuG88Ubu10M/PvUE4itkIq4P+GI225osYr1x/yk0jtjrXCrMKBDaTtgGZsNGWZ22x6Ow0w122rC48wIDAQAB'),
+    TXT("_dmarc", "v=DMARC1; p=none; pct=100; fo=1; ri=3600; rua=mailto:de890fd0@dmarc.mailgun.org,mailto:xje34ut3sx7@inbox.ondmarc.com; ruf=mailto:de890fd0@dmarc.mailgun.org,mailto:xje34ut3sx7@inbox.ondmarc.com;"),
 );
