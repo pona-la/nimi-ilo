@@ -18,7 +18,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: o kama e ilo DNSControl
-        uses: gacts/install-dnscontrol@bd76d0934fea4543e839d00d9104c5f6fefc495b # v1.3.1
+        uses: gacts/install-dnscontrol@f57e617cf52ee0c25df830201d9ada2ce69679f3 # v1.3.5
         with:
           version: v4.34.0
 
